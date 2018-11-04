@@ -7,10 +7,11 @@ buildscript {
 plugins {
     id 'application'
     id 'org.ajoberstar.grgit' version '1.3.2'
-    id 'com.github.johnrengelman.shadow' version '1.2.3'
-    id 'edu.sc.seis.macAppBundle' version '2.1.6'
+    id 'com.github.johnrengelman.shadow' version '4.0.2'
+    id 'edu.sc.seis.macAppBundle' version '2.2.3'
     id 'edu.sc.seis.launch4j' version '2.4.4'
     id 'nebula.ospackage' version '3.5.0'
+    id 'com.github.ben-manes.versions' version '0.20.0'
 }
 
 mainClassName = 'com.mucommander.muCommander'
@@ -305,4 +306,3 @@ task(afterEclipseImport).doLast {
     f.append('encoding//src/main/resources/dictionary_zh_CN.properties=UTF-8\n')
     f.append('encoding//src/main/resources/dictionary_zh_TW.properties=UTF-8\n')
 }
-
